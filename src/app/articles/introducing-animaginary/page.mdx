@@ -1,11 +1,11 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 
 export const article = {
-  author: 'Adam Wathan',
+  author: 'Ivan Trajanovski',
   date: '2022-09-02',
-  title: 'Introducing Animaginary: High performance web animations',
+  title: 'Understanding SwiftUI Layouts',
   description:
-    'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
+    "SwiftUI is a powerful framework for building user interfaces in a declarative way. One of its key features is its flexible and intuitive layout system. In this article, we'll dive into the basics of SwiftUI layout to help you create beautiful and responsive user interfaces.",
 }
 
 export const metadata = {
@@ -15,92 +15,76 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />
 
-When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.
+## What is SwiftUI Layout?
 
-To make this possible, we needed to squeeze every drop of performance out of the browser possible. And so Animaginary was born.
+Layout in SwiftUI is all about arranging and positioning views within your app's user interface. Unlike the old way of using Auto Layout constraints in UIKit, SwiftUI uses a more straightforward approach based on stacks and spacers.
 
-```js
-import { animate } from '@planetaria/animaginary'
+### Stacks
 
-export function MyComponent({ open, children }) {
-  return (
-    <animate.div
-      in={open}
-      animateFrom="opacity-0 scale-95"
-      animateTo="opacity-100 scale-100"
-      duration={350}
-    >
-      {children}
-    </animate.div>
-  )
-}
+In SwiftUI, you can use stacks to organize your views horizontally or vertically. There are two main types of stacks:
+
+- **HStack**: This creates a horizontal stack, placing views from left to right.
+- **VStack**: This creates a vertical stack, arranging views from top to bottom.
+
+Here's an example of how to use an HStack and a VStack:
+
+```swift
+    HStack {
+        Text("Hello")
+        Text("World")
+    }
+
+    VStack {
+        Text("SwiftUI")
+        Text("Layout")
+    }
 ```
 
-Animaginary is our new web animation library that redefines what you thought was possible on the web. Hand-written in optimized WASM, Animaginary can even animate the `height` property of an element at 60fps.
+### Spacers
 
-## Sermone fata
+Spacers are special views in SwiftUI that help distribute space within a stack. They can push views apart or pull them closer together. You can use `Spacer()` to create a flexible space that fills available space in the stack.
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
-
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
-
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
+```swift
+    VStack {
+        Text("Top")
+        Spacer()
+        Text("Bottom")
+    }
 ```
 
-Aere repetiti cognataque natus. Habebat vela solutis saepe munus nondum adhuc
-oscula nomina pignora corpus deserat.
+### Alignment
 
-## Lethaei Pindumve me quae dinumerat Pavor
+You can control the alignment of views within a stack using the `alignment` property. For example:
 
-Idem se saxa fata pollentibus geminos; quos pedibus. Est urnis Herses omnes nec
-divite: et ille illa furit sim verbis Cyllenius.
-
-1. Captus inpleverunt collo
-2. Nec nam placebant
-3. Siquos vulgus
-4. Dictis carissime fugae
-5. A tacitos nulla viginti
-
-Ungues fistula annoso, ille addit linoque motatque uberior verso
-[rubuerunt](#) confine desuetaque. _Sanguine_ anteit
-emerguntque expugnacior est pennas iniqui ecce **haeret** genus: peiora imagine
-fossas Cephisos formosa! Refugitque amata [refelli](#)
-supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum
-regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota
-ars talis.
-
-```c
-digital.webcam_dual_frequency = webmasterMms;
-if (5 + language_standalone_google) {
-    cc_inbox_layout *= file_character;
-    task += p;
-    lockUnicode += enterprise_monochrome(tokenFunctionPersonal, keyVirtual,
-            adf);
-}
-windows_binary_esports(87734, array(restoreRomTopology, adRaw(407314),
-        dongleBashThumbnail), interpreter);
+```swift
+    HStack(alignment: .top) {
+        Text("Top")
+        Text("Middle")
+        Text("Bottom")
+    }
 ```
 
-Sit volat naturam; motu Cancri. Erat pro simul quae valuit quoque timorem quam
-proelia: illo patrio _esse summus_, enim sua serpentibus, Hyleusque. Est coniuge
-recuso; refert Coroniden ignotos manat, adfectu.
+## Combining Stacks
+
+To create more complex layouts, you can combine stacks. Nesting stacks inside each other allows you to create intricate designs easily.
+
+```swift
+    VStack {
+        HStack {
+            Text("Left")
+            Spacer()
+            Text("Right")
+        }
+        Text("Center")
+    }
+```
+
+## Responsive Layouts
+
+One of the advantages of SwiftUI is its automatic handling of different screen sizes and orientations. SwiftUI adjusts the layout to fit the available space, making it easier to create apps that work well on various devices.
+
+## Conclusion
+
+SwiftUI's layout system simplifies the way we design user interfaces. By using stacks, spacers, and alignment, you can easily create responsive and visually appealing layouts. Experiment with these basic layout techniques, and you'll be well on your way to mastering SwiftUI's layout capabilities.
+
+Start small, practice, and gradually explore more advanced layout options as you become more comfortable with SwiftUI. Happy coding!
