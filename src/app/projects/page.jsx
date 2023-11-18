@@ -5,42 +5,35 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import logoSwift from '@/images/logos/swift.svg'
 import logoFlutter from '@/images/logos/flutter.svg'
 import logoSwiftUI from '@/images/logos/swiftui.svg'
+import logoReactNative from '@/images/logos/react-native.svg'
 
 const projects = [
   {
-    name: 'Hiking App',
-    description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoSwiftUI,
+    name: 'Guess the Number',
+    description: 'A React Native cross-platform game to guess the number.',
+    link: {
+      href: 'https://github.com/ivantrj/rn_guess_the_number',
+      label: 'GitHub',
+    },
+    logo: logoReactNative,
   },
   {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+    name: 'Chat App',
+    description: 'A Flutter cross-platform chat app using Firebase.',
+    link: {
+      href: 'https://github.com/ivantrj/flutter_chat_app',
+      label: 'GitHub',
+    },
     logo: logoFlutter,
   },
   {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoSwift,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+    name: 'To Do List App',
+    description: 'A SwiftUI iOS to do app using Firebase.',
+    link: {
+      href: 'https://github.com/ivantrj/ToDoList_SwiftUI',
+      label: 'GitHub',
+    },
     logo: logoSwiftUI,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoFlutter,
   },
 ]
 
@@ -57,13 +50,13 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Projects I’ve worked on.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
+      title="Projects I’ve worked on."
       intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
     >
       <ul
