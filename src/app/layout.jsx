@@ -6,11 +6,10 @@ import '@/styles/tailwind.css'
 export const metadata = {
   title: {
     template: '%s - Ivan',
-    default:
-      'Ivan - Mobile developer',
+    default: 'Ivan - Mobile developer',
   },
   description:
-    'I’m Ivan, a mobile developer and entrepreneur based in Salzburg, Austria',
+    'I offer freelance expertise in building cross-platform apps using Flutter and React Native. Let me help bring your app idea to life on both Android and iOS with a unified codebase',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

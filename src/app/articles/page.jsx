@@ -34,8 +34,7 @@ function Article({ article }) {
 
 export const metadata = {
   title: 'Articles',
-  description:
-    'My writing on SwiftUI, Flutter, and being a solopreneur.',
+  description: 'My writing on SwiftUI, Flutter, and being a solopreneur.',
 }
 
 export default async function ArticlesIndex() {
@@ -43,7 +42,7 @@ export default async function ArticlesIndex() {
 
   return (
     <SimpleLayout
-      title="My writing on SwiftUI, Flutter, and being a solopreneur."
+      title="My writing on Flutter, React Native, SwiftUI and being a solopreneur."
       intro="All of my long-form thoughts on programming and more, collected in chronological order."
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">

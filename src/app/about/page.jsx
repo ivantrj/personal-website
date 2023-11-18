@@ -58,33 +58,45 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Hi, I’m Ivan. Mobile Developer based in the picturesque city of Salzburg, Austria.
+            Hi, I’m Ivan. Mobile Developer based in the picturesque city of
+            Salzburg, Austria.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              From a young age, I`ve been captivated by the world of tinkering
+              and exploration. As a child, the thrill of disassembling gadgets
+              and understanding how they worked fueled my curiosity. This early
+              passion set the stage for a lifelong journey into the realms of
+              technology and creativity.
             </p>
+
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              As I matured, my enthusiasm for technology led me to pursue a
+              degree in computer science abroad. The academic journey not only
+              honed my technical skills but also broadened my perspective on the
+              limitless possibilities that the digital landscape holds. Armed
+              with this knowledge, I ventured into the professional realm, eager
+              to contribute my expertise to the dynamic field of technology.
             </p>
+
             <p>
-              I spent the next few summers indoors working on a huge lego city,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations to fully built my
-              little dream city.
+              Throughout my career, my heart has always gravitated towards the
+              artistry of crafting beautiful user interfaces for both web and
+              mobile platforms. The intersection of design and functionality has
+              become my playground, where I blend creativity with technical
+              prowess to deliver seamless and visually appealing experiences.
+              This commitment to excellence has not only defined my professional
+              identity but also fueled my unwavering passion for creating
+              digital masterpieces.
             </p>
+
             <p>
-              Today, I’m starting my entrepreneur journey, where we’re working
-              on digital agency services and solutions for e-com businesses. And
-              I also own a blog that helps men to improve their life and
-              fitness.
+              Today, I stand ready to channel my skills and passion into
+              freelance opportunities. My expertise extends to the development
+              of cross-platform applications, where I bring a unique blend of
+              technical acumen and design sensibility. As a freelancer, I am
+              poised to turn visions into reality, offering a seamless fusion of
+              innovation and aesthetics in every project I undertake.
             </p>
           </div>
         </div>
@@ -93,7 +105,11 @@ export default function About() {
             <SocialLink href="https://twitter.com/ivan_trj" icon={TwitterIcon}>
               Follow on Twitter
             </SocialLink>
-            <SocialLink href="https://github.com/ivantrj" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/ivantrj"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
             <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
