@@ -58,45 +58,24 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Hi, I’m Ivan. Mobile Developer based in the picturesque city of
+            Hi, I&apos;m Ivan. Mobile Developer based in the picturesque city of
             Salzburg, Austria.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              From a young age, I`ve been captivated by the world of tinkering
-              and exploration. As a child, the thrill of disassembling gadgets
-              and understanding how they worked fueled my curiosity. This early
-              passion set the stage for a lifelong journey into the realms of
-              technology and creativity.
+              I&apos;ve always loved figuring out how things work.  Even as a kid, I was always the one taking things apart to peek inside. That curiosity has never left me, and it&apos;s what sparked my interest in technology and creating new things.
             </p>
 
             <p>
-              As I matured, my enthusiasm for technology led me to pursue a
-              degree in computer science abroad. The academic journey not only
-              honed my technical skills but also broadened my perspective on the
-              limitless possibilities that the digital landscape holds. Armed
-              with this knowledge, I ventured into the professional realm, eager
-              to contribute my expertise to the dynamic field of technology.
+              That passion led me to study computer science in college. Studying abroad was an amazing experience – I learned a ton and it opened my eyes to all the incredible things you can do with technology.  Since graduating, I&apos;ve been excited to bring my skills to the real world.
             </p>
 
             <p>
-              Throughout my career, my heart has always gravitated towards the
-              artistry of crafting beautiful user interfaces for both web and
-              mobile platforms. The intersection of design and functionality has
-              become my playground, where I blend creativity with technical
-              prowess to deliver seamless and visually appealing experiences.
-              This commitment to excellence has not only defined my professional
-              identity but also fueled my unwavering passion for creating
-              digital masterpieces.
+              What I really love is creating websites and apps that are both beautiful and easy to use.  It&apos;s a great feeling to combine my design sense with my technical skills to make something people enjoy using.  This passion is what drives me to do my best work.
             </p>
 
             <p>
-              Today, I stand ready to channel my skills and passion into
-              freelance opportunities. My expertise extends to the development
-              of cross-platform applications, where I bring a unique blend of
-              technical acumen and design sensibility. As a freelancer, I am
-              poised to turn visions into reality, offering a seamless fusion of
-              innovation and aesthetics in every project I undertake.
+              Now, I&apos;m ready to take on freelance projects and help bring new ideas to life! I&apos;m great at building apps that work well on all kinds of devices. If you&apos;re looking for someone who can combine technical know-how with a focus on great design, I&apos;m love to help!
             </p>
           </div>
         </div>
