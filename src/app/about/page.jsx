@@ -61,23 +61,23 @@ export default function About() {
             Hi, I&apos;m Ivan. Mobile Developer based in the picturesque city of
             Salzburg, Austria.
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              I&apos;ve always loved figuring out how things work.  Even as a kid, I was always the one taking things apart to peek inside. That curiosity has never left me, and it&apos;s what sparked my interest in technology and creating new things.
-            </p>
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              <p>
+              I&apos;ve always had a knack for figuring out how things work. As a kid, I was always taking stuff apart to get a peek inside. That curiosity is what led me to tech and the joy of creating. It&apos;s a feeling I&apos;ll never forget.
+              </p>
 
-            <p>
-              That passion led me to study computer science in college. Studying abroad was an amazing experience – I learned a ton and it opened my eyes to all the incredible things you can do with technology.  Since graduating, I&apos;ve been excited to bring my skills to the real world.
-            </p>
+              <p>
+              I actually started out in data science, but something kept pulling me towards building things people could directly interact with.  There&apos;s something special about creating something that has a real-world impact.  Studying abroad really broadened my horizons and fueled that passion.  Ever since then, I&apos;ve loved bringing my tech skills to life in a more tangible way.
+              </p>
 
-            <p>
-              What I really love is creating websites and apps that are both beautiful and easy to use.  It&apos;s a great feeling to combine my design sense with my technical skills to make something people enjoy using.  This passion is what drives me to do my best work.
-            </p>
+              <p>
+              My favorite thing to build is beautiful, user-friendly websites and apps.  There&apos;s a real thrill in combining my design sense with the technical side to create something people enjoy using. It&apos;s what drives me to do my best work.
+              </p>
 
-            <p>
-              Now, I&apos;m ready to take on freelance projects and help bring new ideas to life! I&apos;m great at building apps that work well on all kinds of devices. If you&apos;re looking for someone who can combine technical know-how with a focus on great design, I&apos;m love to help!
-            </p>
-          </div>
+              <p>
+              Right now, I&apos;m ready to dive into freelance projects and help bring new ideas to life! I&apos;m great at building apps that work seamlessly across devices. If you&apos;re looking for someone who blends technical skills with a focus on great design, let&apos;s connect!  When I&apos;m not coding, you&apos;ll probably find me running, sweating it out with calisthenics, yelling at the TV during a football game, or just soaking up some nature.
+              </p>
+            </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">
