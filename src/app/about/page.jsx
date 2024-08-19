@@ -55,31 +55,7 @@ export default function About() {
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
-        </div>
-        <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Hi, I&apos;m Ivan. Mobile Developer based in the picturesque city of
-            Salzburg, Austria.
-          </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-              I&apos;ve always had a knack for figuring out how things work. As a kid, I was always taking stuff apart to get a peek inside. That curiosity is what led me to tech and the joy of creating. It&apos;s a feeling I&apos;ll never forget.
-              </p>
-
-              <p>
-              I actually started out in data science, but something kept pulling me towards building things people could directly interact with.  There&apos;s something special about creating something that has a real-world impact.  Studying abroad really broadened my horizons and fueled that passion.  Ever since then, I&apos;ve loved bringing my tech skills to life in a more tangible way.
-              </p>
-
-              <p>
-              My favorite thing to build is beautiful, user-friendly websites and apps.  There&apos;s a real thrill in combining my design sense with the technical side to create something people enjoy using. It&apos;s what drives me to do my best work.
-              </p>
-
-              <p>
-              Right now, I&apos;m ready to dive into freelance projects and help bring new ideas to life! I&apos;m great at building apps that work seamlessly across devices. If you&apos;re looking for someone who blends technical skills with a focus on great design, let&apos;s connect!  When I&apos;m not coding, you&apos;ll probably find me running, sweating it out with calisthenics, yelling at the TV during a football game, or just soaking up some nature.
-              </p>
-            </div>
-        </div>
-        <div className="lg:pl-20">
+          <div className="lg:pl-20">
           <ul role="list">
             <SocialLink href="https://twitter.com/ivan_trj" icon={TwitterIcon}>
               Follow on Twitter
@@ -101,9 +77,67 @@ export default function About() {
             >
               hello.ivantrj@gmail.com
             </SocialLink>
+            </ul>
+          </div>
+        </div>
+        <div className="lg:order-first lg:row-span-2">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            Hi, I&apos;m Ivan. Mobile Developer based in the picturesque city of Salzburg, Austria.
+          </h1>
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <p>
+              I’ve always had a knack for figuring out how things work. As a kid, I was always taking stuff apart to get a peek inside. That curiosity is what led me to tech and the joy of creating.
+            </p>
+            <p>
+              My favorite thing to build is beautiful, user-friendly websites and apps. There’s a real thrill in combining my design sense with the technical side to create something people enjoy using.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mt-8">
+            Technologies I Use
+          </h2>
+          <div className="flex flex-wrap gap-4 mt-4">
+            <span className="bg-teal-500 text-white px-3 py-1 rounded">Flutter</span>
+            <span className="bg-teal-500 text-white px-3 py-1 rounded">Firebase</span>
+            <span className="bg-teal-500 text-white px-3 py-1 rounded">React</span>
+            <span className="bg-teal-500 text-white px-3 py-1 rounded">Next.js</span>
+            <span className="bg-teal-500 text-white px-3 py-1 rounded">TypeScript</span>
+            <span className="bg-teal-500 text-white px-3 py-1 rounded">Node.js</span>
+          </div>
+
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mt-8">
+            Work Experience
+          </h2>
+          <ul className="mt-4 space-y-4">
+            <li>
+              <strong>E Group</strong> (2019 - 2022)
+              <p>Software Developer and Data Scientist.</p>
+            </li>
+            <li>
+              <strong>ruwido</strong> (2022 - Present)
+              <p>Flutter, iOS, and Android Developer.</p>
+            </li>
+            <li>
+              <strong>The Odd Institute</strong> (2021)
+              <p>iOS Developer.</p>
+            </li>
+          </ul>
+
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 mt-8">
+            Education
+          </h2>
+          <ul className="mt-4 space-y-4">
+            <li>
+              <strong>University of Pecs</strong> (2016 - 2021)
+              <p>Bachelor in Computer Science Engineering.</p>
+            </li>
+            
           </ul>
         </div>
       </div>
     </Container>
   )
 }
+
+
+
