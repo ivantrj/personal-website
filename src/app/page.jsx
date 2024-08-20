@@ -17,6 +17,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import Projects from './projects/page'
+import Contact from './contact/page'
 
 function MailIcon(props) {
   return (
@@ -244,17 +245,9 @@ export default async function Home() {
       </ul>
     </SimpleLayout>
 
-      <Container id="contact" className="mt-24">
-        <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-          Contact Me
-        </h2>
-        <form className="mt-6 space-y-4">
-          <input type="text" name="name" placeholder="Your Name" required className="w-full p-2 border rounded" />
-          <input type="email" name="email" placeholder="Your Email" required className="w-full p-2 border rounded" />
-          <textarea name="message" placeholder="Your Message" required className="w-full p-2 border rounded" rows="4"></textarea>
-          <Button type="submit">Send Message</Button>
-        </form>
-      </Container>
+      {/* <Container id="contact"> */}
+    <Contact />
+      {/* </Container> */}
     </>
   )
 }
