@@ -24,3 +24,5 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+export type ActiveNavItem = "posts" | "tags" | "about" | "search" | "services";

@@ -4,7 +4,7 @@ import { LOGO_IMAGE, SITE } from "@config";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "posts" | "tags" | "about" | "search" | "services";
 }
 
 const { activeNav } = Astro.props;
@@ -71,6 +71,14 @@ const { activeNav } = Astro.props;
             </a>
           </li> -->
           <li>
+            <a
+              href="/services/"
+              class={activeNav === "services" ? "active" : ""}
+            >
+              Services
+            </a>
+          </li>
+          <li>
             <LinkButton
               href="/search/"
               className={`focus-outline p-3 sm:p-1 ${
@@ -89,6 +97,7 @@ const { activeNav } = Astro.props;
               <span class="sr-only">Search</span>
             </LinkButton>
           </li>
+
           {
             SITE.lightAndDarkMode && (
               <li>
