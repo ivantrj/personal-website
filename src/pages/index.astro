@@ -1,129 +1,312 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import LinkButton from "@components/LinkButton.astro";
-import Card from "@components/Card";
-import Socials from "@components/Socials.astro";
-import getSortedPosts from "@utils/getSortedPosts";
-import { SITE, SOCIALS } from "@config";
-import { YouTube } from "@astro-community/astro-embed-youtube";
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import Modal from "../components/Modal.astro";
 
-const posts = await getCollection("blog");
+const projects = [
+  {
+    title: "E-commerce Mobile App",
+    description: "A cross-platform mobile app built with React Native.",
+    longDescription:
+      "A full-featured e-commerce mobile application built with React Native and Firebase. Features include user authentication, product catalog, shopping cart, payment integration, and order tracking.",
+    tags: ["React Native", "Firebase", "Stripe"],
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    link: "#",
+    github: "https://github.com/yourusername/project",
+    screenshots: [
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+    ],
+  },
+  {
+    title: "Flutter Social Media App",
+    description: "A modern social media app built with Flutter.",
+    longDescription:
+      "A social media platform that enables users to share moments, connect with friends, and discover new content. Built with Flutter and featuring real-time updates, custom animations, and an intuitive UI.",
+    tags: ["Flutter", "Firebase", "GetX"],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    link: "#",
+    github: "https://github.com/yourusername/project2",
+    screenshots: [
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6",
+    ],
+  },
+];
 
-const sortedPosts = getSortedPosts(posts);
-// const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
-
-const socialCount = SOCIALS.filter((social) => social.active).length;
+const services = [
+  {
+    title: "React Native Development",
+    description:
+      "Custom mobile applications built with React Native. From concept to app store, delivering native experiences for iOS and Android.",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.5A6.5 6.5 0 015.5 12m6.5 6.5A6.5 6.5 0 0112 5.5m0 13A6.5 6.5 0 0018.5 12"/></svg>',
+  },
+  {
+    title: "Flutter Development",
+    description:
+      "Beautiful, natively compiled applications for mobile, web, and desktop from a single codebase using Flutter.",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
+  },
+  {
+    title: "Technical Consultation",
+    description:
+      "Strategic technical guidance for your projects. Architecture planning, code reviews, and best practices implementation.",
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>',
+  },
+];
 ---
 
-<Layout>
-  <Header />
-  <main id="main-content">
-    <section id="hero">
-      <!-- <h1>Ivan T.</h1> -->
-
-      <p>I make mobile apps and websites.</p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Find me on:</div>
-            <Socials centered />
+<Layout title="Ivan Trajanovski - Portfolio">
+  <Modal />
+  <main>
+    <!-- Hero Section with Animated Background -->
+    <section
+      class="min-h-screen flex items-center pt-16 relative overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-white to-gray-50">
+        </div>
+        <div
+          class="absolute right-0 top-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse"
+        >
+        </div>
+        <div
+          class="absolute left-0 bottom-1/4 w-96 h-96 bg-primary-light/5 rounded-full blur-3xl animate-pulse"
+          style="animation-delay: 1s;"
+        >
+        </div>
+        <div
+          class="absolute left-1/2 top-1/3 w-64 h-64 bg-purple-200/10 rounded-full blur-2xl animate-pulse"
+          style="animation-delay: 2s;"
+        >
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center">
+          <div
+            class="inline-block mb-4 px-6 py-2 bg-primary/10 rounded-full transform hover:scale-105 transition-transform"
+          >
+            <span class="text-primary font-medium"
+              >Available for freelance work</span
+            >
           </div>
-        )
-      }
+          <h1
+            class="text-5xl md:text-6xl font-display font-bold text-secondary"
+          >
+            Hi, I'm <span class="text-primary relative inline-block">
+              Ivan
+              <span
+                class="absolute bottom-0 left-0 w-full h-3 bg-primary/10 -skew-x-6 transform hover:skew-x-0 transition-transform"
+              ></span>
+            </span>
+          </h1>
+          <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+            A passionate full-stack developer crafting beautiful and functional
+            web experiences.
+          </p>
+          <div class="mt-10 flex gap-4 justify-center">
+            <a
+              href="#contact"
+              class="group bg-primary text-white px-8 py-3 rounded-lg text-lg hover:bg-primary-light transition-all duration-300 transform hover:-translate-y-1"
+            >
+              Let's Work Together
+              <span
+                class="inline-block transition-transform group-hover:translate-x-1"
+                >→</span
+              >
+            </a>
+            <a
+              href="#services"
+              class="group border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg hover:bg-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+            >
+              View Services
+              <span
+                class="inline-block transition-transform group-hover:translate-x-1"
+                >→</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="youtube-video-container">
-      <div class="video-wrapper">
-        <YouTube id="CDFCFPTG1qw" />
+    <!-- Rest of the sections remain the same -->
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionTitle
+          title="Services I Offer"
+          subtitle="Specialized solutions tailored to your needs, from mobile development to technical consultation."
+        />
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service) => <ServiceCard {...service} />)}
+        </div>
       </div>
-    </div>
+    </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>Discover how we can help you with your mobile app needs.</p>
-      <LinkButton href="/services/"> View Services </LinkButton>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50/50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionTitle title="About Me" />
+        <div class="mt-6 grid md:grid-cols-2 gap-12">
+          <div>
+            <p class="text-gray-600 leading-relaxed">
+              I'm a full-stack developer with X years of experience building web
+              and mobile applications. I specialize in creating responsive,
+              user-friendly solutions that solve real-world problems. My
+              expertise spans across web and mobile development, with a focus on
+              React Native and Flutter.
+            </p>
+            <div class="mt-8">
+              <h3 class="font-display font-bold text-secondary mb-4">
+                Technologies I Work With
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >React</span
+                >
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >React Native</span
+                >
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >Flutter</span
+                >
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >Node.js</span
+                >
+                <span
+                  class="px-4 py-2 bg-white shadow-sm border border-gray-100 text-gray-600 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors cursor-default"
+                  >SwiftUI</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-xl blur-xl"
+            >
+            </div>
+            <div
+              class="relative w-full h-64 bg-gray-200 rounded-lg overflow-hidden"
+            >
+              <img
+                src="/assets/IMG_1491-min.png"
+                alt="Portrait"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionTitle
+          title="Featured Projects"
+          subtitle="A selection of my recent work across web and mobile platforms."
+        />
+        <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {projects.map((project) => <ProjectCard {...project} />)}
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50/50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionTitle
+          title="Get in Touch"
+          subtitle="Have a project in mind? Let's create something amazing together."
+        />
+        <div class="mt-8 max-w-xl mx-auto">
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <form class="space-y-6" onsubmit="handleSubmit(event)">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700">Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700">Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700">Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-light transition-colors"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-
-  {
-    recentPosts.length > 0 && (
-      <section id="recent-posts">
-        <h2>Recent Posts</h2>
-        <ul>
-          {recentPosts.map(
-            ({ data, slug }, index) =>
-              index < SITE.postPerIndex && (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              )
-          )}
-        </ul>
-      </section>
-    )
-  }
-
-  <div class="all-posts-btn-wrapper">
-    <LinkButton href="/posts/">
-      All Posts
-      <svg xmlns="http://www.w3.org/2000/svg"
-        ><path
-          d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-        ></path>
-      </svg>
-    </LinkButton>
-  </div>
 </Layout>
 
-<Footer />
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
 
-<style>
-  /* ===== Hero Section ===== */
-  #hero {
-    @apply pb-6 pt-8;
-  }
-  #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
-  }
-  #hero .rss-link {
-    @apply mb-6;
-  }
-  #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
-  }
-  #hero p {
-    @apply my-2;
-  }
-  .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
-  }
-  .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
-  }
+    const formData = new FormData(event.target);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
 
-  /* ===== Featured & Recent Posts Sections ===== */
-  #featured,
-  #recent-posts {
-    @apply pb-6 pt-12;
+    // Create the mailto URL
+    const mailtoUrl = `mailto:hello.ivantrj@gmail.com?subject=Portfolio Contact Form - ${data.name}&body=Name: ${data.name}%0D%0AEmail: ${data.email}%0D%0A%0D%0AMessage:%0D%0A${data.message}`;
+
+    // Open the user's default email client
+    window.location.href = mailtoUrl;
   }
-  #featured h2,
-  #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
-  }
-  .all-posts-btn-wrapper {
-    @apply my-8 text-center;
-  }
-  .youtube-video-container {
-    @apply flex justify-center w-full my-8;
-  }
-  .video-wrapper {
-    @apply w-full max-w-3xl rounded-lg overflow-hidden;
-  }
-</style>
+</script>

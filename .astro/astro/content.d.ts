@@ -140,72 +140,7 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-"adding-new-post.md": {
-	id: "adding-new-post.md";
-  slug: "adding-new-posts-in-astropaper-theme";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"customizing-astropaper-theme-color-schemes.md": {
-	id: "customizing-astropaper-theme-color-schemes.md";
-  slug: "customizing-astropaper-theme-color-schemes";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"dynamic-og-images.md": {
-	id: "dynamic-og-images.md";
-  slug: "dynamic-og-image-generation-in-astropaper-blog-posts";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"example-draft-post.md": {
-	id: "example-draft-post.md";
-  slug: "example-draft-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"portfolio-website-development.md": {
-	id: "portfolio-website-development.md";
-  slug: "how-do-i-develop-my-portfolio-and-blog";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"predefined-color-schemes.md": {
-	id: "predefined-color-schemes.md";
-  slug: "predefined-color-schemes";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"setting-dates-via-git-hooks.md": {
-	id: "setting-dates-via-git-hooks.md";
-  slug: "setting-dates-via-git-hooks";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"tailwind-typography.md": {
-	id: "tailwind-typography.md";
-  slug: "tailwind-typography";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"terminal-development.md": {
-	id: "terminal-development.md";
-  slug: "how-do-i-develop-my-terminal-portfolio-website-with-react";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-};
-
+		
 	};
 
 	type DataEntryMap = {
@@ -214,5 +149,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
