@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import RecentPublications from "../components/RecentPublications.astro";
+import { Icon } from "astro-iconify";
 ---
 
 <!doctype html>
@@ -21,11 +22,46 @@ import RecentPublications from "../components/RecentPublications.astro";
         <p class="w-full text-justify text-base md:text-lg">
           I'm a mobile developer based in Austria.
         </p>
-        <p class="w-full text-justify text-base md:text-lg">
+        <div class="flex flex-col gap-2">
+          <p class="text-md font-medium">Find me on:</p>
+          <div class="flex gap-4">
+            <a
+              href="https://twitter.com/ivan_trj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                name="radix-icons:twitter-logo"
+                class="w-6 h-6 text-gray-600 hover:text-gray-500 dark:text-neutral-200"
+              />
+            </a>
+            <a
+              href="https://linkedin.com/in/ivantrj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                name="radix-icons:linkedin-logo"
+                class="w-6 h-6 text-gray-600 hover:text-gray-500 dark:text-neutral-200"
+              />
+            </a>
+            <a
+              href="https://github.com/ivantrj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                name="radix-icons:github-logo"
+                class="w-6 h-6 text-gray-600 hover:text-gray-500 dark:text-neutral-200"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- <p class="w-full text-justify text-base md:text-lg">
           When I'm not coding, you might find me exploring the beautiful
           Austrian landscapes or staying up-to-date with the latest mobile
           development trends and technologies.
-        </p>
+        </p> -->
         <img
           src="https://images.unsplash.com/photo-1538467472788-dc7740301fea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Astronaut"
