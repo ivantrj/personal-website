@@ -57,14 +57,48 @@ import { Icon } from "astro-iconify";
             </a>
           </div>
         </div>
-        <!-- <p class="w-full text-justify text-base md:text-lg">
-          When I'm not coding, you might find me exploring the beautiful
-          Austrian landscapes or staying up-to-date with the latest mobile
-          development trends and technologies.
-        </p> -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <div class="bg-gray-100 dark:bg-neutral-700 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4">🎯 Focus Areas</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <span class="text-sm">Cross-platform Development</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sm">iOS Native Development</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sm">AI Integration in Mobile Apps</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sm">Indie App Development</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-gray-100 dark:bg-neutral-700 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4">💻 Tech Stack</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2">
+                <span class="text-sm">Flutter & Dart</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sm">React Native & TypeScript</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sm">SwiftUI & Swift</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-sm">Firebase & Supabase</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <img
           src="https://images.unsplash.com/photo-1538467472788-dc7740301fea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Astronaut"
+          alt="Austrian landscape"
+          class="rounded-lg mt-4"
         />
         <p class="italic text-xs text-gray-600 dark:text-neutral-400">
           <a
@@ -72,28 +106,6 @@ import { Icon } from "astro-iconify";
             >Unsplash</a
           >
         </p>
-      </div>
-      <div class="w-full flex flex-col items-center gap-2.5 px-4 lg:px-0 mt-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-          <div class="bg-gray-100 dark:bg-neutral-700 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-2">🚀 What I Do</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li>Mobile App Development</li>
-              <li>UI/UX Design</li>
-              <li>Cross-platform Solutions</li>
-              <li>App Performance Optimization</li>
-            </ul>
-          </div>
-          <div class="bg-gray-100 dark:bg-neutral-700 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-2">🛠️ Tech Stack</h3>
-            <ul class="list-disc list-inside space-y-2">
-              <li>iOS (Swift, SwiftUI)</li>
-              <li>Android (Kotlin)</li>
-              <li>React Native</li>
-              <li>Flutter</li>
-            </ul>
-          </div>
-        </div>
       </div>
       <RecentPublications />
     </main>
