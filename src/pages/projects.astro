@@ -7,13 +7,29 @@ import { Icon } from "astro-iconify";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Description of your first project",
-    tech: ["Flutter", "Firebase"],
-    link: "https://github.com/ivantrj/project1",
-    image: "/project1.png"
+    title: "Flutter Chat App",
+    description: "A real-time chat application built with Flutter and Firebase, featuring modern UI and seamless message synchronization.",
+    tech: ["Flutter", "Firebase", "Dart"],
+    link: "https://github.com/ivantrj/flutter-chat",
+    image: "/project1.png",
+    featured: true
   },
-  // Add more projects here
+  {
+    title: "Task Management App",
+    description: "A productivity app for managing daily tasks and projects with clean UI and offline support.",
+    tech: ["Flutter", "SQLite", "Provider"],
+    link: "https://github.com/ivantrj/task-management",
+    image: "/project2.png",
+    featured: false
+  },
+  {
+    title: "Weather App",
+    description: "A beautiful weather application with detailed forecasts and animated weather conditions.",
+    tech: ["Flutter", "OpenWeather API", "Bloc"],
+    link: "https://github.com/ivantrj/weather-app",
+    image: "/project3.png",
+    featured: true
+  }
 ];
 ---
 
@@ -39,10 +55,10 @@ const projects = [
               )}
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2">{project.title}</h3>
-                <p class="text-sm mb-4">{project.description}</p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
                 <div class="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
-                    <span class="text-xs bg-gray-200 dark:bg-neutral-600 px-2 py-1 rounded">
+                    <span class="bg-gray-200 dark:bg-neutral-600 px-2 py-1 rounded text-sm">
                       {tech}
                     </span>
                   ))}
