@@ -107,6 +107,40 @@ import { Icon } from "astro-iconify";
           >
         </p>
       </div>
+
+      <div class="px-4 md:px-16 mt-12">
+        <h2 class="text-2xl md:text-4xl font-bold mb-8">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div class="bg-gray-100 dark:bg-neutral-700 rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">SwiftUI Weather App</h3>
+              <p class="text-sm mb-4">A beautiful weather app built with SwiftUI featuring real-time weather data and animations.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-neutral-600 px-2 py-1 rounded">SwiftUI</span>
+                <span class="text-xs bg-gray-200 dark:bg-neutral-600 px-2 py-1 rounded">WeatherKit</span>
+              </div>
+              <a href="https://github.com/ivantrj/weather-app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm hover:text-gray-600 dark:hover:text-gray-300">
+                View Project <Icon name="radix-icons:arrow-right" class="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 dark:bg-neutral-700 rounded-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Flutter Chat App</h3>
+              <p class="text-sm mb-4">A real-time chat application built with Flutter and Firebase, featuring modern UI and seamless messaging.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs bg-gray-200 dark:bg-neutral-600 px-2 py-1 rounded">Flutter</span>
+                <span class="text-xs bg-gray-200 dark:bg-neutral-600 px-2 py-1 rounded">Firebase</span>
+              </div>
+              <a href="https://github.com/ivantrj/flutter-chat" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm hover:text-gray-600 dark:hover:text-gray-300">
+                View Project <Icon name="radix-icons:arrow-right" class="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <RecentPublications />
     </main>
     <Footer />

@@ -16,7 +16,7 @@
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
     "@astropub/icons": "^0.2.0",
-    "astro": "^5.1.7",
+    "astro": "^5.2.3",
     "astro-iconify": "^1.2.0",
     "astro-navbar": "^2.3.2",
     "clsx": "^2.1.1",
