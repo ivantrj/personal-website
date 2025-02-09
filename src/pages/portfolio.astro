@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
 import ProjectCard from '../components/ProjectCard.astro'
+import { buttonVariants } from '../components/ui/button'
 ---
 
 <BaseLayout
@@ -12,11 +13,16 @@ import ProjectCard from '../components/ProjectCard.astro'
 >
   <main class="flex min-h-[80vh] flex-auto flex-col" transition:animate="slide">
     <TopLayout>
-      <h2
-        class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
-      >
-        Projects and clone's
-      </h2>
+      <div class="flex items-center gap-4">
+        <a href="/" class={buttonVariants({ variant: 'ghost' })}>
+          ← Back
+        </a>
+        <h2
+          class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+        >
+          Projects and clone's
+        </h2>
+      </div>
     </TopLayout>
     <BottomLayout size="xl">
       <div class="flex w-full flex-wrap justify-center gap-2">
