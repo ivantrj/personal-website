@@ -48,6 +48,23 @@ export const SEARCH: Page = {
   DESCRIPTION: 'Search all posts and projects by keyword.',
 }
 
+export const PROJECTS_DATA = [
+  {
+    name: 'Personal Website',
+    description: 'My personal website built with Astro and TailwindCSS',
+    img: '/me.png',
+    website: 'https://ivantrj.dev',
+    repository: 'https://github.com/ivantrj/personal-website'
+  },
+  {
+    name: 'Example Project',
+    description: 'A sample project to showcase the portfolio structure',
+    img: '/me.png',
+    website: 'https://example.com',
+    repository: 'https://github.com/example/project'
+  }
+]
+
 // Study Page
 export const STUDIES = [
   {

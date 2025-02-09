@@ -1,25 +1,9 @@
 ---
-import { WORK } from '../lib/constants'
+import { PROJECTS_DATA } from '../lib/constants'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import TopLayout from '../layouts/TopLayout.astro'
 import BottomLayout from '../layouts/BottomLayout.astro'
 import ProjectCard from '../components/ProjectCard.astro'
-
-import { contentfulClient } from '../lib/contentful'
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
-import type { EntryFieldTypes } from 'contentful'
-
-interface Project {
-  contentTypeId: 'Projects'
-  fields: {
-    name: EntryFieldTypes.Text
-    img: EntryFieldTypes.AssetLink
-    website: EntryFieldTypes.EntryResourceLink<any>
-    repositorio: EntryFieldTypes.EntryResourceLink<any>
-  }
-}
-
-const entries = await contentfulClient.getEntries<Project>({})
 ---
 
 <BaseLayout
@@ -37,14 +21,14 @@ const entries = await contentfulClient.getEntries<Project>({})
     <BottomLayout size="xl">
       <div class="flex w-full flex-wrap justify-center gap-2">
         {
-          entries.items.map((entry: any) => (
+          PROJECTS_DATA.map((project) => (
             <ProjectCard
-              key={entry?.sys?.id}
-              href={entry?.fields?.website}
-              heading={entry?.fields?.name}
-              subheading={entry?.fields?.description}
-              imagePath={entry?.fields?.img?.fields?.file.url}
-              altText={entry?.fields?.img?.fields.title}
+              key={project.name}
+              href={project.website}
+              heading={project.name}
+              subheading={project.description}
+              imagePath={project.img}
+              altText={project.name}
               class="w-full sm:w-2/5"
             />
           ))
