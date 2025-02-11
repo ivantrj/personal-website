@@ -50,18 +50,18 @@ export const SEARCH: Page = {
 
 export const PROJECTS_DATA = [
   {
-    name: 'Personal Website',
-    description: 'My personal website built with Astro and TailwindCSS',
-    img: '/me.png',
-    website: 'https://ivantrj.dev',
-    repository: 'https://github.com/ivantrj/personal-website'
+    name: 'ReadMate - Smart Book Tracker',
+    description: 'A book tracker app that helps you keep track of books.',
+    img: '/flutter.png',
+    website: 'https://readmate.netlify.app/',
+    // repository: 'https://github.com/ivantrj/readmate'
   },
   {
-    name: 'Example Project',
-    description: 'A sample project to showcase the portfolio structure',
-    img: '/me.png',
-    website: 'https://example.com',
-    repository: 'https://github.com/example/project'
+    name: 'Step Tracker',
+    description: 'Step Tracker built with SwiftUI',
+    img: '/swiftui.png',
+    website: 'https://github.com/ivantrj/step-tracker',
+    repository: 'https://github.com/ivantrj/step-tracker'
   }
 ]
 
