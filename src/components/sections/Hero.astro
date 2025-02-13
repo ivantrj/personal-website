@@ -59,13 +59,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						</div>
 					)
 				}
-				{
+				<!-- {
 					phone && (
 						<a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
 							<Phone />
 						</a>
 					)
-				}
+				} -->
 				{
 					profiles.map(({ network, url }) => {
 						const Icon = SOCIAL_ICONS[network];
