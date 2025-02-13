@@ -1,97 +1,61 @@
----
+## Print-friendly portfolio CV
 
-# Astro Portfolio
+![preview](https://github.com/user-attachments/assets/44c47034-06e4-412a-b9dd-014593b32215)
 
-This template helps you build a portfolio using Astro, Tailwind CSS, and Shadcn UI.
+![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-0F172A?&logo=tailwindcss)
+![GitHub stars](https://img.shields.io/github/stars/Smilesharks/dev-portfolio)
+![GitHub issues](https://img.shields.io/github/issues/Smilesharks/dev-portfolio)
+![GitHub forks](https://img.shields.io/github/forks/Smilesharks/dev-portfolio)
+![GitHub PRs](https://img.shields.io/github/issues-pr/Smilesharks/dev-portfolio)
 
-## Design
+## 🛠️ Stack
 
-![View 1](public/View1.png)
-![View 2](public/View2.png)
+- [**Astro**](https://astro.build/) - The next-gen web framework.
+- [**Typescript**](https://www.typescriptlang.org/) - JavaScript with type syntax.
+- [**Ninja Keys**](https://github.com/ssleptsov/ninja-keys) - Dropdown menu with keyboard shortcuts made in pure JavaScript.
 
-## Inspiration
+## 🚀 Getting Started
 
-This project was inspired by several outstanding portfolios. Here are some that served as references:
+### 1. Use this Repo as an Astro Project Template
 
-- [Gianmarco Portfolio](https://gianmarco.xyz/)
-- [Vitesse Portfolio](https://astro-theme-vitesse.netlify.app/)
-- [Gurido Portfolio](https://gurido.vercel.app/)
+- I use [pnpm](https://pnpm.io/installation) as my package manager.
 
-## Technologies Used
+```bash
+# Enable pnpm on MacOS, WSL & Linux:
+corepack enable
+corepack prepare pnpm@latest --activate
+```
 
-This project utilizes the following technologies:
+# Initialize the project
+```bash
+pnpm create astro@latest -- --template Smilesharks/dev-portfolio
+```
 
-- **Astro**: A modern framework for building fast and efficient websites.
-- **Tailwind CSS**: A utility-first CSS framework for rapid and responsive design.
-- **Shadcn UI**: A collection of accessible and easy-to-use UI components.
-- **React**: For interactive components and advanced functionality.
+### 2. Add Your Content:
 
-## Requirements
+Edit the `cv.json` file to create your own printable Portfolio/CV.
 
-Before starting, make sure you have the following requirements installed:
+### 3. Launch the Development Server:
 
-- Node.js (version 14 or higher)
-- npm or yarn
+```bash
+# Enjoy the results
+pnpm dev
+```
+1. Open [**http://localhost:4321**](http://localhost:4321/) in your browser to view the result 🚀
 
-## Installation
+### 4. Customisable colours:
+Change the data-theme of `cv.json` and choose one of the colour themes defined in theme.css, red, blue, green, cyber and default, with its variants in dark mode, or create your own.
 
-To install and run the project locally, follow these steps:
+## 🧞 Commands
 
-1. Clone this repository:
+|     | Command         | Action                                                                       |
+| :-- | :-------------- | :--------------------------------------------------------------------------- |
+| ⚙️  | `dev` o `start` | Launches a local development server at `localhost:4321`.                   |
+| ⚙️  | `build`         | Checks for errors and creates a production build in `./dist/`. |
+| ⚙️  | `preview`       | Local preview at `localhost:4321`                                       |
 
-   ```bash
-   git clone https://github.com/bue221/astro-portfolio.git
-   ```
 
-2. Navigate to the project directory:
+CV JSON schema from [**jsonresume.org**](https://jsonresume.org/schema/)
 
-   ```bash
-   cd astro-portfolio
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-5. Open your browser and visit `http://localhost:3000` to see your portfolio in action.
-
-## Project Structure
-
-A brief overview of the project structure:
-
-- **/public**: Images and other static files.
-- **/src**: Contains all Astro components and pages.
-- **/styles**: Custom CSS files.
-- **astro.config.mjs**: Main configuration for Astro.
-- **tailwind.config.js**: Configuration for Tailwind CSS.
-
-## Important Considerations
-
-- **Accessibility**: Ensure your portfolio is accessible to all users, including those with disabilities.
-- **SEO**: Optimize your portfolio for search engines by adding meta tags and relevant content.
-- **Performance**: Use modern web development practices to ensure optimal performance, such as lazy loading images and minimizing CSS/JS.
-- **Responsive Design**: Make sure your portfolio looks good on devices of all sizes, from mobile to desktop screens.
-
-This project use Contentful to fetch data from the API. and load your projects section, if you want to use your contentful data add variables to your .env file.
-
-## Contributions
-
-Contributions are welcome! If you have ideas or improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
+Based on [**Bartosz Jarocki - Print-friendly, minimalist CV page**](https://github.com/BartoszJarocki/cv) and [**Miguel Ángel Durán - minimalist-portfolio-json**](https://github.com/midudev/minimalist-portfolio-json)

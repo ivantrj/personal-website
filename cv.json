@@ -1,0 +1,313 @@
+{
+  "basics": {
+    "name": "Ivan Trajanovski",
+    "label": "Mobile Developer",
+    "image": "/me_avatar.jpg",
+    "email": "hello.ivantrj@gmail.com",
+    "phone": "+1 555-555-5555",
+    "url": "https://ivantrj.com",
+    "summary": "Mobile Developer",
+    "theme": "purple",
+    "location": {
+      "address": "",
+      "postalCode": "10001",
+      "city": "Salzburg",
+      "countryCode": "AT",
+      "region": "Austria"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "john-doe",
+        "url": "https://linkedin.com/in/ivantrj"
+      },
+      {
+        "network": "X",
+        "username": "john-doe",
+        "url": "https://x.com/ivan-trj"
+      },
+      {
+        "network": "GitHub",
+        "username": "johndoe",
+        "url": "https://github.com/ivantrj"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Personal Portfolio",
+      "isActive": false,
+      "description": "A personal portfolio website to showcase my projects and skills.",
+      "highlights": [
+        "Built with React and Tailwind CSS",
+        "Includes a blog and contact form"
+      ],
+      "url": "https://johndoe.dev",
+      "github": "https://github.com"
+    },
+    {
+      "name": "Weather App",
+      "isActive": true,
+      "description": "A web application that provides weather information for any location.",
+      "highlights": [
+        "Built with JavaScript and OpenWeatherMap API",
+        "Responsive design"
+      ],
+      "url": "https://weatherapp.com"
+    },
+    {
+      "name": "Task Manager",
+      "isActive": true,
+      "description": "A simple task management app to keep track of daily tasks.",
+      "highlights": [
+        "Built with Node.js and MongoDB",
+        "User authentication and CRUD operations"
+      ],
+      "url": "https://taskmanager.com",
+      "github": "https://github.com"
+    },
+    {
+      "name": "E-commerce Site",
+      "isActive": false,
+      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "highlights": [
+        "Product management and shopping cart functionality",
+        "Secure payment integration"
+      ],
+      "url": "https://ecommerce.com"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Flutter",
+      "level": "Expert",
+      "keywords": [
+        "Mobile",
+        "UI"
+      ]
+    },
+    {
+      "name": "Swift",
+      "level": "Advanced",
+      "keywords": [
+        "iOS"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Beginner",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "ruwido",
+      "position": "Mobile Developer",
+      "location_type": "On site",
+      "location": "Salzburg, Austria",
+      "url": "https://ruwido.com",
+      "startDate": "2022-08-01",
+      "endDate": null,
+      "summary": "Mobile Developer specializing in Flutter and native development, focusing on creating cross-platform applications with emphasis on performance optimization and seamless BLE integration.",
+      "highlights": [
+        "Led the development of multiple successful Flutter applications from concept to deployment",
+        "Implemented robust BLE connectivity solutions for IoT device integration",
+        "Optimized application performance resulting in 40% faster load times"
+      ],
+      "responsibilities": [
+        "Contributed significantly to the development of multiple cross-platform Flutter applications, ensuring consistent and engaging user interfaces on iOS and Android devices.",
+        "Applied in-depth knowledge of Flutter's widget-based architecture to optimize application performance and deliver responsive, visually appealing interfaces.",
+        "Diagnosed and resolved compatibility issues to establish reliable BLE device connections and maintain seamless data synchronization within mobile apps."
+      ],
+      "achievements": [
+        "Successfully delivered 2 major Flutter applications"
+      ],
+      "skills": [
+        "Flutter",
+        "Swift",
+        "Kotlin"
+      ]
+    },
+    {
+      "name": "E-Group",
+      "position": "Software Developer",
+      "location_type": "Hybrid",
+      "location": "Budapest, Hungary",
+      "url": "https://egroup.hu",
+      "startDate": "2019-07-01",
+      "endDate": "2022-07-01",
+      "summary": "Full-stack developer with focus on backend systems and machine learning integration, specializing in Java and Python development for enterprise applications.",
+      "highlights": [
+        "Key contributor to pioneering federated learning initiatives",
+        "Developed scalable backend solutions using Java and Spring Boot",
+        "Successfully integrated machine learning models into production systems"
+      ],
+      "responsibilities": [
+        "Played a pivotal role in the early formation of a federated learning project team, contributing to innovation in both backend development and data preparation for model testing.",
+        "Served as a backend developer, contributing significantly to a Java-based project's development and optimization of server-side components.",
+        "Built engaging, user-friendly interfaces using Angular and React frameworks, ensuring seamless communication between frontend and backend components."
+      ],
+      "achievements": [
+        "Successfully implemented federated learning system used by enterprise clients"
+      ],
+      "skills": [
+        "Python",
+        "PyTorch",
+        "SQL",
+        "Git",
+        "Java"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Pécs",
+      "url": "https://international.pte.hu/",
+      "area": "Computer Science Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2016-09-01",
+      "endDate": "2021-01-30",
+      "score": "4.3",
+      "courses": [
+        "CS101 - Introduction to Computer Science",
+        "CS102 - Data Structures"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Full Stack Web Development",
+      "date": "2023-05-01",
+      "issuer": "Online University",
+      "url": "https://onlineuniversity.com/certificates/fullstack"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "AI",
+        "Blockchain"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "reference": "Reference…"
+    }
+  ],
+  "volunteer": []
+}
