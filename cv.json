@@ -278,10 +278,22 @@
   ],
   "certificates": [
     {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "name": "First Certificate in English (FCE)",
+      "date": "2016",
+      "issuer": "Cambridge Assessment English",
+      "url": ""
+    },
+    {
+      "name": "Mobile Design Certification",
+      "date": "2024",
+      "issuer": "Uxcel",
+      "url": "https://app.uxcel.com/certificates/EUVUTN3QTTZP"
+    },
+    {
+      "name": "German Language B2 Level",
+      "date": "2024",
+      "issuer": "Busuu",
+      "url": "https://api.busuu.com/anon/certificates/eff7bad7ca3a054028ed2854df5eb01e?lang=en"
     }
   ],
   "languages": [
