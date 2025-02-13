@@ -35,46 +35,46 @@
   },
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
+      "name": "ReadMate",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
+      "description": "A Flutter-based reading application designed to enhance the reading experience.",
       "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
+        "Built with Flutter"
       ],
-      "url": "https://weatherapp.com"
+      "url": "https://readmate.netlify.app/"
     },
     {
-      "name": "Task Manager",
+      "name": "Step Tracker",
       "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
+      "description": "A health-focused iOS application that tracks user's steps and activity using Apple Health integration.",
       "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
+        "Built with SwiftUI for native iOS experience",
+        "Apple Health integration"
       ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
+      "url": "",
+      "github": "https://github.com/ivantrj/step-tracker"
     },
     {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "name": "Close Enough Trivia",
+      "isActive": true,
+      "description": "An engaging trivia game built with Flutter that uses the Open Trivia API for diverse question sets.",
       "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
+        "Built with Flutter",
+        "Integration with Open Trivia API"
       ],
-      "url": "https://ecommerce.com"
+      "url": "",
+      "github": "https://github.com/ivantrj/close-enough-trivia"
+    },
+    {
+      "name": "Maze Solver",
+      "isActive": true,
+      "description": "A Python-based visualization tool that demonstrates maze-solving algorithms in action.",
+      "highlights": [
+        "Built with Python and Tkinter for GUI",
+        "Visual representation of maze-solving algorithms"
+      ],
+      "url": "",
+      "github": "https://github.com/ivantrj/maze_solver"
     }
   ],
   "skills": [
