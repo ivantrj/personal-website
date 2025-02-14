@@ -51,7 +51,7 @@
         "Built with SwiftUI for native iOS experience",
         "Apple Health integration"
       ],
-      "url": "",
+      "url": "https://github.com/ivantrj/step-tracker",
       "github": "https://github.com/ivantrj/step-tracker"
     },
     {
@@ -62,7 +62,7 @@
         "Built with Flutter",
         "Integration with Open Trivia API"
       ],
-      "url": "",
+      "url": "https://github.com/ivantrj/close-enough-trivia",
       "github": "https://github.com/ivantrj/close-enough-trivia"
     },
     {
@@ -73,7 +73,7 @@
         "Built with Python and Tkinter for GUI",
         "Visual representation of maze-solving algorithms"
       ],
-      "url": "",
+      "url": "https://github.com/ivantrj/maze_solver",
       "github": "https://github.com/ivantrj/maze_solver"
     }
   ],
