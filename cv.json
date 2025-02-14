@@ -37,9 +37,11 @@
     {
       "name": "ReadMate",
       "isActive": true,
-      "description": "A Flutter-based reading application designed to enhance the reading experience.",
+      "description": "A Smart Book Tracker application.",
       "highlights": [
-        "Built with Flutter"
+        "Built with Flutter", 
+        "AI Book Recommendations",
+        "Book Search"
       ],
       "url": "https://readmate.netlify.app/"
     },
